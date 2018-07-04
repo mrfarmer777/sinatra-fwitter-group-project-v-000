@@ -2,7 +2,7 @@
 <%@tweets.each do |tweet|%>
   <div>
     <p class="tweet-content">
-      <%=tweet.content%>
+      <a href = "/tweets/<%=tweet.id%>"><%=tweet.content%></a>
     </p>
   </div>
 <%end%>
