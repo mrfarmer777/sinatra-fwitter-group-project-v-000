@@ -1,0 +1,9 @@
+<h1>Welcome to Fwitter!</h1>
+<h4>The Hardest-to-pronounce Twitter-clone in existence!</h4>
+
+<a href="/signup">Sign Up</a>
+<%if !logged_in?%>
+  <a href="/login">Log In</a>
+<%else%>
+  <a href="/logout">Log Out</a>
+<%end%>
