@@ -1,8 +1,8 @@
 <h1>Welcome, <%=current_user.username%>! This is Fwitter</h1>
 <%@tweets.all.each do |tweet|%>
-  <h2><%=tweet.user.username%></h2>
+  <h2><a href = "/users/<%=tweet.user.id%>"><%=tweet.user.username%></a></h2>
   <p>
-    <%=tweet.content%>
+    <a href = "/tweets/<%=tweet.id%>"><%=tweet.content%></a>
   </p>
 <%end%>
 
